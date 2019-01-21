@@ -1,0 +1,17 @@
+<button type="submit"  (click)="datasend()">refresh</button>
+<div>
+  <table>
+    <thead>
+      <th> username </th>
+      <th> pwd </th>
+    </thead>
+    <br/><br/>
+    
+      <tbody>
+        <tr *ngFor="let data of datalist ">
+          <td> {{ data.uname }} </td>
+          <td> {{ data.upwd }} </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
